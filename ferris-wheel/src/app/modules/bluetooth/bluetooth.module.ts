@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { DashboardComponent } from './dashboard.component';
+import { BluetoothComponent } from './bluetooth.component';
 
 @NgModule({
-  declarations: [DashboardComponent],
+  declarations: [BluetoothComponent],
   imports: [
     CommonModule
   ]
 })
-export class DashboardModule { }
+export class BluetoothModule { }
