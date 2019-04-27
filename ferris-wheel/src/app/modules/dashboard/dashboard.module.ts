@@ -12,7 +12,8 @@ import { DashboardComponent } from './dashboard.component';
     MotorModule
   ],
   exports: [
-    MotorModule
+    MotorModule,
+    DashboardComponent
   ]
 })
 export class DashboardModule { }
