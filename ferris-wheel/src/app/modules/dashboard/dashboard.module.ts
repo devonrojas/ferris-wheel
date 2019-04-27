@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { MotorModule } from '../motor/motor.module';
+import { BluetoothModule } from '../bluetooth/bluetooth.module';
+import { ColorPickerModule } from '../color-picker/color-picker.module';
 
 import { DashboardComponent } from './dashboard.component';
 
@@ -9,11 +11,15 @@ import { DashboardComponent } from './dashboard.component';
   declarations: [DashboardComponent],
   imports: [
     CommonModule,
-    MotorModule
+    MotorModule,
+    BluetoothModule,
+    ColorPickerModule
   ],
   exports: [
     MotorModule,
-    DashboardComponent
+    DashboardComponent,
+    BluetoothModule,
+    ColorPickerModule
   ]
 })
 export class DashboardModule { }

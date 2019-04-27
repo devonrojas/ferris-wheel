@@ -6,6 +6,9 @@ import { BluetoothComponent } from './bluetooth.component';
   declarations: [BluetoothComponent],
   imports: [
     CommonModule
+  ],
+  exports: [
+    BluetoothComponent
   ]
 })
 export class BluetoothModule { }
