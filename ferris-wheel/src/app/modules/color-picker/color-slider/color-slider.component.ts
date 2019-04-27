@@ -1,22 +1,13 @@
-import { 
+import {
 Component, OnInit, ViewChild,  ElementRef,  AfterViewInit,  Input, Output,  SimpleChanges,  OnChanges,  EventEmitter,  HostListener, } from '@angular/core';
 
 @Component({
   selector: 'app-color-slider',
   templateUrl: './color-slider.component.html',
   styleUrls: ['./color-slider.component.scss']
-  
+
 })
-export class ColorSliderComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
-}
-
-class ColorSliderComponent implements AfterViewInit {
+export class ColorSliderComponent implements AfterViewInit {
   @ViewChild('canvas')
   canvas: ElementRef<HTMLCanvasElement>
 

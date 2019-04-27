@@ -1,5 +1,9 @@
 <div class="bt-wrapper">
 	<h2>Bluetooth</h2>
+	<div *ngIf="(device | async) as device" style="text-align:center">
+    <p>Name: {{ device.name }}</p>
+    <p>UUID: {{ device.id }}</p>
+  </div>
 	<div class="button-wrapper">
 		<div class="button">
 			<button (click) = "connect()" name = "bt">Connect</button>

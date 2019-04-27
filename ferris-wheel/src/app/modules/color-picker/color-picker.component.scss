@@ -10,24 +10,41 @@
   transition: background 0.3s ease;
 }
 
+.buttons,.flex, .speed-wrapper {
+  flex: 1 1 0;
+}
+
 .button button:hover {
   cursor: pointer;
   background: darken(#1b9af7, 20);
 }
 
-.input-wrapper .input input {
+.speed-wrapper .input, .speed-wrapper input {
   width: 100%;
 }
 
-.color-wrapper {
-  padding: 20px;
+.speed-wrapper input {
+  font-size: 2rem;
+  max-width: 200px;
 }
-:host {
+.speed-wrapper{
+  margin: 0 20px;
+}
+
+.color-wrapper {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: center;
+}
+
+.fancy-wrapper {
   display: block;
-  width: 316px;
   padding: 16px;
 }
-.color-wrapper {
+.fancy-wrapper .color-wrapper {
   display: flex;
   height: 250px;
 }

@@ -3,22 +3,9 @@ import { Component, OnInit, ViewChild,  ElementRef,  AfterViewInit,  Input,  Out
 @Component({
   selector: 'app-color-palette',
   templateUrl: './color-palette.component.html',
-  styleUrls: ['./color-palette.component.scss']
+  styleUrls: ['./color-palette.component.scss'],
 })
-export class ColorPaletteComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
-}
-@Component({
-  selector: 'app-color-palette',
-  templateUrl: './color-palette.component.html',
-  styleUrls: ['./color-palette.component.css'],
-})
-class ColorPaletteComponent implements AfterViewInit, OnChanges {
+export class ColorPaletteComponent implements AfterViewInit, OnChanges {
   @Input()
   hue: string
 

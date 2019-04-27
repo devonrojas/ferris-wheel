@@ -1,43 +1,43 @@
-<<<<<<< HEAD
+<h2>Color Picker</h2>
+
 <div class="color-wrapper">
-  <h2>Color Picker</h2>
-  <div class="input-wrapper">
+  <div class="speed-wrapper">
     <p>Please enter a number between 0-9 to specify the animation speed.</p>
     <div class="input">
       <input type="number" min="0" max="9" [(ngModel)]="speed"/>
     </div>
   </div>
-  <p>Then click on the animation you wish to execute.</p>
   <div class="buttons">
+    <p>Then click on the animation you wish to execute.</p>
     <div class="button">
       <button type="button" name="button" (click)="send('0')">Gradient</button>
     </div>
     <div class="button">
-      <button type="button" name="button" (click)="send('0')">Siren</button>
+      <button type="button" name="button" (click)="send('1')">Siren</button>
     </div>
-    <div class="button">
+    <!-- <div class="button">
       <button type="button" name="button">TBD</button>
     </div>
     <div class="button">
       <button type="button" name="button">TBD</button>
+    </div> -->
+  </div>
+  <div class="flex">
+    <div class="fancy-wrapper">
+        <div class="color-wrapper">
+          <app-color-palette [hue]="hue" (color)="color = $event"></app-color-palette>
+          <app-color-slider
+          (color)="hue=$event"
+          style="margin-left:16px"
+          ></app-color-slider>
+        </div>
+        <div class="input-wrapper">
+          <span class="text">{{color}}</span>
+          <div
+          class="color-div"
+          [ngStyle]="{'background-color': color || 'white'}"
+          ></div>
+        </div>
     </div>
   </div>
 </div>
-=======
-<p>
- <div class="color-wrapper">
-  <app-color-palette [hue]="hue" (color)="color = $event"></app-color-palette>
-  <app-color-slider
-    (color)="hue=$event"
-    style="margin-left:16px"
-  ></app-color-slider>
-</div>
-<div class="input-wrapper">
-  <span class="text">{{color}}</span>
-  <div
-    class="color-div"
-    [ngStyle]="{'background-color': color || 'white'}"
-  ></div>
-</div>
-</p>
->>>>>>> 0e8d7ac782676d0b109d0c5ad3dfb3b866aae025

@@ -44,7 +44,8 @@ export class BluetoothService {
 
   requestBluetoothDevice() {
     return navigator.bluetooth.requestDevice({
-      filters: [{services: [0xFFE0]}]
+      acceptAllDevices: true
+      // filters: [{services: [0xFFE0]}]
     })
     .then(device => {
       console.log(`Connected to '${device.name}'`);
@@ -81,6 +82,7 @@ export class BluetoothService {
       console.log('Notifications started.');
       characteristic
       .addEventListener('characteristicvaluechanged', () => {
+        console.log('Receiving data...');
         let value = new TextDecoder().decode((<any>event.target).value);
         for(let c of value) {
           if (c === '\n') {

@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { BluetoothService } from '../../_services/bluetooth.service';
+
 @Component({
   selector: 'app-color-picker',
   templateUrl: './color-picker.component.html',
@@ -7,14 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ColorPickerComponent implements OnInit {
 
-  constructor() { }
+  speed: number = 1;
+
+  public hue: string
+  public color: string
+
+  constructor(private bluetooth: BluetoothService) { }
 
   ngOnInit() {
   }
 
-}
-
-class ColorPickerComponent {
-  public hue: string
-  public color: string
+  send(data) {
+    let str = `${data}${this.speed}`;
+    this.bluetooth.send(str);
+  }
 }
