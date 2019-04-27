@@ -12,8 +12,14 @@ import { DashboardComponent } from './dashboard.component';
   imports: [
     CommonModule,
     MotorModule,
-    ColorPickerModule,
-    BluetoothModule
+    BluetoothModule,
+    ColorPickerModule
+  ],
+  exports: [
+    MotorModule,
+    DashboardComponent,
+    BluetoothModule,
+    ColorPickerModule
   ]
 })
 export class DashboardModule { }
