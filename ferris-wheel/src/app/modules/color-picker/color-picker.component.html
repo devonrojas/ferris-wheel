@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div class="color-wrapper">
   <h2>Color Picker</h2>
   <div class="input-wrapper">
@@ -22,3 +23,21 @@
     </div>
   </div>
 </div>
+=======
+<p>
+ <div class="color-wrapper">
+  <app-color-palette [hue]="hue" (color)="color = $event"></app-color-palette>
+  <app-color-slider
+    (color)="hue=$event"
+    style="margin-left:16px"
+  ></app-color-slider>
+</div>
+<div class="input-wrapper">
+  <span class="text">{{color}}</span>
+  <div
+    class="color-div"
+    [ngStyle]="{'background-color': color || 'white'}"
+  ></div>
+</div>
+</p>
+>>>>>>> 0e8d7ac782676d0b109d0c5ad3dfb3b866aae025

@@ -13,3 +13,8 @@ export class ColorPickerComponent implements OnInit {
   }
 
 }
+
+class ColorPickerComponent {
+  public hue: string
+  public color: string
+}
