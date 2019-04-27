@@ -3,12 +3,15 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 
+import { WebBluetoothModule } from '@manekinekko/angular-web-bluetooth';
+
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    WebBluetoothModule
   ],
   providers: [],
   bootstrap: [AppComponent]

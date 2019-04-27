@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BluetoothComponent implements OnInit {
 
-  constructor() { }
+  constructor(private bluetooth: BluetoothService) { 
+
+  }
+
+  connect() {
+  this.bluetooth.connect();
+  }
+
 
   ngOnInit() {
   }
-
 }
+

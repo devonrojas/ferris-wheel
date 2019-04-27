@@ -6,4 +6,13 @@ import { Injectable } from '@angular/core';
 export class BluetoothService {
 
   constructor() { }
+  
+  	connect(){
+	  	navigator.bluetooth.requestDevice()
+	  	.then(device => { })
+	  	.catch(error => {console.log(error); })  
+	  }
+
 }
+
+
