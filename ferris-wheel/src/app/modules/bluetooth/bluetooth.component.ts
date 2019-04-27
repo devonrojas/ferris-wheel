@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { BluetoothService } from '../../_services/bluetooth.service';
+
 @Component({
   selector: 'app-bluetooth',
   templateUrl: './bluetooth.component.html',
