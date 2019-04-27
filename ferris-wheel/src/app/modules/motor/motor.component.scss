@@ -1,0 +1,19 @@
+.button button {
+  border: none;
+  outline: none;
+  background: #1b9af7;
+  width: 100%;
+  color: white;
+  height: 40px;
+  border-radius: 3px;
+  margin: 10px 0;
+}
+
+.button button:hover {
+  cursor: pointer;
+  background: darken(#1b9af7, 20);
+}
+
+.motor-wrapper {
+  padding: 20px;
+}

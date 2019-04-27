@@ -1,3 +1,24 @@
-<p>
-  color-picker works!
-</p>
+<div class="color-wrapper">
+  <h2>Color Picker</h2>
+  <div class="input-wrapper">
+    <p>Please enter a number between 0-9 to specify the animation speed.</p>
+    <div class="input">
+      <input type="number" min="0" max="9" [(ngModel)]="speed"/>
+    </div>
+  </div>
+  <p>Then click on the animation you wish to execute.</p>
+  <div class="buttons">
+    <div class="button">
+      <button type="button" name="button" (click)="send('0')">Gradient</button>
+    </div>
+    <div class="button">
+      <button type="button" name="button" (click)="send('0')">Siren</button>
+    </div>
+    <div class="button">
+      <button type="button" name="button">TBD</button>
+    </div>
+    <div class="button">
+      <button type="button" name="button">TBD</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,25 @@
+.container {
+  padding: 20px;
+}
+
+.title {
+  font-size: 2rem;
+  color: #467fd7;
+  text-align: center;
+}
+
+.component-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.component-wrapper .component {
+  flex: 1 1 0;
+  margin: 20px;
+  min-height: 300px;
+  background: #d8edf3;
+  text-align: center;
+}

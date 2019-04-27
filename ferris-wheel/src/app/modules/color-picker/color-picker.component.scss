@@ -1,0 +1,24 @@
+.button button {
+  border: none;
+  outline: none;
+  background: #1b9af7;
+  width: 100%;
+  color: white;
+  height: 40px;
+  border-radius: 3px;
+  margin: 10px 0;
+  transition: background 0.3s ease;
+}
+
+.button button:hover {
+  cursor: pointer;
+  background: darken(#1b9af7, 20);
+}
+
+.input-wrapper .input input {
+  width: 100%;
+}
+
+.color-wrapper {
+  padding: 20px;
+}

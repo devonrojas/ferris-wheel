@@ -1,4 +1,4 @@
-<div class="">
+<!-- <div class="">
   <button type="button" name="button" (click)="view = 'bluetooth'">Bluetooth</button>
   <button type="button" name="button" (click)="view = 'color'">Color</button>
   <button type="button" name="button" (click)="view = 'motor'">Motor</button>
@@ -7,5 +7,22 @@
     <app-color-picker *ngSwitchCase="'color'"></app-color-picker>
     <app-motor *ngSwitchCase="'motor'"></app-motor>
     <div *ngSwitchDefault>No element selected.</div>
+  </div>
+</div> -->
+
+<div class="container">
+  <div class="title">
+    <h2>Ferris Wheel Control</h2>
+  </div>
+  <div class="component-wrapper">
+    <div class="component">
+      <app-bluetooth></app-bluetooth>
+    </div>
+    <div class="component">
+      <app-motor></app-motor>
+    </div>
+    <div class="component">
+      <app-color-picker></app-color-picker>
+    </div>
   </div>
 </div>
