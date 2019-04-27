@@ -8,6 +8,9 @@ import { MotorDirectionComponent } from './motor-direction/motor-direction.compo
   declarations: [MotorComponent, MotorSpeedComponent, MotorDirectionComponent],
   imports: [
     CommonModule
+  ],
+  exports: [
+    MotorComponent
   ]
 })
 export class MotorModule { }
